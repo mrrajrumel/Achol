@@ -325,7 +325,7 @@ export default function App() {
             </h2>
             <div className="w-20 h-1 bg-champagne mx-auto mt-3" />
             <p className="text-sm sm:text-base text-alabaster/90 font-normal leading-relaxed mt-4">
-              Explore Achol’s awards and honors celebrating more than ten years of dedication to the film industry.
+              Explore Achol’s awards and honors from more than ten years of standout work in film.
             </p>
           </div>
 
