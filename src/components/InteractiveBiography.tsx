@@ -365,7 +365,7 @@ export const InteractiveBiography: React.FC<InteractiveBiographyProps> = ({ useA
 
             {/* Verified Celebrity Register Indexes with hover styles */}
             <div className="pt-6 border-t border-white/5 space-y-3.5">
-              <span className="text-[10px] tracking-[0.25em] text-[#E6D5B8]/80 uppercase font-bold font-mono block text-left">
+              <span className="text-xs tracking-[0.2em] text-[#D4B27A] uppercase font-bold font-mono block text-left">
                 Online Profiles & Database Records
               </span>
               
@@ -374,32 +374,32 @@ export const InteractiveBiography: React.FC<InteractiveBiographyProps> = ({ useA
                   href="https://www.imdb.com/name/nm6355498/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-yellow-400/5 hover:bg-yellow-400/15 border border-yellow-400/10 hover:border-yellow-400/30 rounded-xl text-[11px] text-yellow-500 font-mono font-bold hover:scale-[1.03] active:scale-95 transition-all text-center"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-yellow-400/5 hover:bg-yellow-400/15 border border-yellow-400/10 hover:border-yellow-400/30 rounded-xl text-xs text-yellow-500 font-mono font-bold hover:scale-[1.03] active:scale-95 transition-all text-center"
                 >
                   <span>IMDb PRO</span>
-                  <span className="text-[9px] opacity-60 font-semibold">(nm6355498)</span>
-                  <ExternalLink className="w-3" />
+                  <span className="text-[10px] opacity-60 font-semibold">(nm6355498)</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </a>
 
                 <a 
                   href="https://en.wikipedia.org/wiki/Achol"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-400/5 hover:bg-blue-400/15 border border-blue-400/10 hover:border-blue-400/30 rounded-xl text-[11px] text-blue-400 font-serif font-bold hover:scale-[1.03] active:scale-95 transition-all text-center"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-400/5 hover:bg-blue-400/15 border border-blue-400/10 hover:border-blue-400/30 rounded-xl text-xs text-blue-400 font-serif font-bold hover:scale-[1.03] active:scale-95 transition-all text-center"
                 >
                   <span>WIKIPEDIA</span>
-                  <ExternalLink className="w-3" />
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </a>
 
                 <a 
                   href="https://www.wikidata.org/wiki/Q15894778"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-red-400/5 hover:bg-red-400/15 border border-red-400/10 hover:border-red-400/30 rounded-xl text-[11px] text-red-400 font-mono font-bold hover:scale-[1.03] active:scale-95 transition-all text-center"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-red-400/5 hover:bg-red-400/15 border border-red-400/10 hover:border-red-400/30 rounded-xl text-xs text-red-400 font-mono font-bold hover:scale-[1.03] active:scale-95 transition-all text-center"
                 >
                   <span>WIKIDATA</span>
-                  <span className="text-[9px] opacity-60 font-semibold">(Q15894778)</span>
-                  <ExternalLink className="w-3" />
+                  <span className="text-[10px] opacity-60 font-semibold">(Q15894778)</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>
             </div>
