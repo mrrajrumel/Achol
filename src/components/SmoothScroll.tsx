@@ -8,47 +8,69 @@ interface SmoothScrollProps {
 export const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
   const contentRef = useRef<HTMLDivElement>(null);
   const [contentHeight, setContentHeight] = useState(0);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    // Detect mobile/touch devices or users preferring reduced motion
+    const checkTouch = () => {
+      const isTouch = (
+        'ontouchstart' in window ||
+        navigator.maxTouchPoints > 0 ||
+        window.matchMedia('(pointer: coarse)').matches ||
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+        window.innerWidth < 1024
+      );
+      setIsTouchDevice(isTouch);
+    };
+
+    checkTouch();
+    window.addEventListener('resize', checkTouch, { passive: true });
+    return () => window.removeEventListener('resize', checkTouch);
+  }, []);
 
   // Native scroll progress tracking
   const { scrollY } = useScroll();
 
-  // Fine-tuned highly luxurious damping curve that matches high-end GSAP ScrollSmoother perfectly
-  const springConfig = { damping: 25, stiffness: 85, mass: 0.5, restDelta: 0.01 };
+  // Fine-tuned highly responsive silky damping curve for desktop
+  const springConfig = { damping: 28, stiffness: 95, mass: 0.25, restDelta: 0.001 };
   const smoothY = useSpring(scrollY, springConfig);
 
   // Translate container upwards based on smoothed scroll coordinates
   const translateY = useTransform(smoothY, (value) => -value);
 
   useEffect(() => {
+    if (isTouchDevice) return;
+
     const handleResize = () => {
       if (contentRef.current) {
         setContentHeight(contentRef.current.scrollHeight);
       }
     };
 
-    // Initial resize triggering
     handleResize();
 
-    // Use a high-end ResizeObserver to refresh height dynamically when elements/posters render
     const resizeObserver = new ResizeObserver(() => handleResize());
     if (contentRef.current) {
       resizeObserver.observe(contentRef.current);
     }
 
-    // Interval backup for safety/image loading
-    const timer = setInterval(handleResize, 1000);
-
-    // Initial loading offsets to secure correct dimensions
     window.addEventListener('load', handleResize);
     window.addEventListener('resize', handleResize);
 
     return () => {
       resizeObserver.disconnect();
-      clearInterval(timer);
       window.removeEventListener('load', handleResize);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [isTouchDevice]);
+
+  if (isTouchDevice) {
+    return (
+      <div id="smooth-content" className="w-full relative">
+        {children}
+      </div>
+    );
+  }
 
   return (
     <>

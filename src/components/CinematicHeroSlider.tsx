@@ -106,7 +106,24 @@ export const CinematicHeroSlider: React.FC<CinematicHeroSliderProps> = ({
     };
     window.addEventListener('mousemove', handleMouseMove);
 
+    let isVisible = true;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        isVisible = entry ? entry.isIntersecting : true;
+        if (isVisible) {
+          cancelAnimationFrame(animFrame);
+          animFrame = requestAnimationFrame(render);
+        }
+      },
+      { threshold: 0.05 }
+    );
+    if (canvas) {
+      observer.observe(canvas);
+    }
+
     const render = () => {
+      if (!isVisible) return;
       time += 0.01 * waveSpeed;
 
       mouse.x += (mouse.tx - mouse.x) * 0.07;
@@ -205,6 +222,7 @@ export const CinematicHeroSlider: React.FC<CinematicHeroSliderProps> = ({
     render();
 
     return () => {
+      observer.disconnect();
       cancelAnimationFrame(animFrame);
       window.removeEventListener('resize', resizeCanvas);
       window.removeEventListener('mousemove', handleMouseMove);

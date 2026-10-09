@@ -86,14 +86,10 @@ export default function App() {
           const targetId = href.substring(1);
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
-            let top = 0;
-            let el = targetElement as HTMLElement | null;
-            while (el && el.id !== 'smooth-content') {
-              top += el.offsetTop;
-              el = el.offsetParent as HTMLElement | null;
-            }
+            const navOffset = 70;
+            const targetTop = window.scrollY + targetElement.getBoundingClientRect().top - navOffset;
             window.scrollTo({
-              top: top,
+              top: Math.max(0, targetTop),
               behavior: 'smooth'
             });
           }
@@ -115,11 +111,12 @@ export default function App() {
   useEffect(() => {
     const fetchInstagramFeed = async () => {
       try {
-        const res = await fetch('/data.ts');
+        const res = await fetch('/instagram_data.json');
         if (res.ok) {
           const result = await res.json();
-          if (result.success && result.data && result.data.length > 0) {
-            setPosts(result.data);
+          const postsList = Array.isArray(result) ? result : result?.data;
+          if (Array.isArray(postsList) && postsList.length > 0) {
+            setPosts(postsList);
             setIsLiveFeed(true);
           }
         }
@@ -430,6 +427,8 @@ export default function App() {
                         src={post.imageUrl} 
                         alt={post.caption}
                         referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       />
 
@@ -480,6 +479,8 @@ export default function App() {
                         src={post.imageUrl} 
                         alt={post.caption}
                         referrerPolicy="no-referrer"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                       />
 

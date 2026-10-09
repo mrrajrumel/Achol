@@ -218,6 +218,8 @@ export const InteractiveFilmography: React.FC<InteractiveFilmographyProps> = ({ 
                     <img 
                       src={project.embedId ? `https://img.youtube.com/vi/${project.embedId}/hqdefault.jpg` : (project.imageUrl || undefined)} 
                       alt={project.title} 
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.8s]"
                       referrerPolicy="no-referrer"
                       onError={(e) => {

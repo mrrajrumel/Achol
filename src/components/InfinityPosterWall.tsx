@@ -24,8 +24,8 @@ export const InfinityPosterWall: React.FC<InfinityPosterWallProps> = ({
       const first = shifted.shift();
       if (first) shifted.push(first);
     }
-    // Quadruple the column list to create a completely seamless infinite loop
-    return [...shifted, ...shifted, ...shifted, ...shifted];
+    // Duplicate the column list twice for a mathematically exact, seamless infinite loop
+    return [...shifted, ...shifted];
   });
 
   const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
@@ -91,6 +91,8 @@ export const InfinityPosterWall: React.FC<InfinityPosterWallProps> = ({
                       src={imgUrl} 
                       alt="Film Poster"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover opacity-35 group-hover:opacity-65 transition-opacity"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />

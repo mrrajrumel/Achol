@@ -73,17 +73,13 @@ export const FullScreenNavigation: React.FC<FullScreenNavigationProps> = ({ useA
     const targetElement = document.querySelector(href);
     if (targetElement) {
       setTimeout(() => {
-        let top = 0;
-        let el = targetElement as HTMLElement | null;
-        while (el && el.id !== 'smooth-content') {
-          top += el.offsetTop;
-          el = el.offsetParent as HTMLElement | null;
-        }
+        const navOffset = 70;
+        const targetTop = window.scrollY + targetElement.getBoundingClientRect().top - navOffset;
         window.scrollTo({
-          top: top,
+          top: Math.max(0, targetTop),
           behavior: 'smooth'
         });
-      }, 500);
+      }, 400);
     }
   };
 

@@ -62,6 +62,8 @@ export const InteractiveShowreel: React.FC<InteractiveShowreelProps> = ({ useAud
                 <img 
                   src={`https://img.youtube.com/vi/${video.embedId}/hqdefault.jpg`} 
                   alt={video.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80" />

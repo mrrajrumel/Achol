@@ -140,6 +140,7 @@ html {
   display: flex;
   width: max-content;
   animation: marquee 30s linear infinite;
+  will-change: transform;
 }
 
 .animate-marquee:hover {
@@ -228,6 +229,7 @@ html {
 
 .animate-scroll-vertical {
   animation: scroll-vertical 48s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-vertical:hover {
@@ -236,6 +238,7 @@ html {
 
 .animate-scroll-vertical-reverse {
   animation: scroll-vertical-reverse 48s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-vertical-reverse:hover {

@@ -112,6 +112,8 @@ export const InteractiveBiography: React.FC<InteractiveBiographyProps> = ({ useA
                   src={cinemaBanner} 
                   alt="Achol Akhe Glamour Scene"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover origin-center transition-transform duration-[2.5s] ease-out group-hover:scale-108"
                 />
                 
