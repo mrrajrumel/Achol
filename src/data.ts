@@ -328,7 +328,7 @@ export const timelineAwards: AwardItem[] = [
     year: '2023',
     title: 'National Stage Performer of Honor',
     organization: 'Global Achievers & Women Leadership Awards',
-    description: 'Presented at ICCB Bashundhara for outstanding live stage performances and classical dance.'
+    description: 'Awarded at ICCB Bashundhara for her live stage shows and classical dance.'
   }
 ];
 
