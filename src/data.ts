@@ -420,7 +420,7 @@ export const instagramPosts: InstagramPost[] = [
   {
     id: 'insta-7',
     imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9xwwLdLHJHkPNPPaLGRpPqOuBYpzqTgr4Um_8GBVqsmZnYbO7HIHdig&s=10',
-    caption: 'Memories from Sultana Bibiana. Visiting flower fields and enjoying folk music. Pure, simple, and heartfelt. #Dhallywood',
+    caption: 'Sweet memories from Sultana Bibiana. I loved the flower fields, folk songs, and simple country life.',
     likes: '18.1K',
     comments: 298,
     postUrl: 'https://www.instagram.com/achol_akhee'
