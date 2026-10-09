@@ -1,0 +1,68 @@
+[
+  {
+    id: 'insta-1',
+    imageUrl: 'https://img-mm.manoramaonline.com/content/dam/mm/mo/web-stories/movies/images/2024/8/2/achol-akhe-6.jpg',
+    caption: '#Dhallywood #CoupleVibes',
+    likes: '24.8K',
+    comments: 480,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-2',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe1QvPgNmkiRpPmggWei6BrHVFQf2UuCx0HGciuGq9NKtCCx2PuELPjc&s=10',
+    caption: '#Dhallywood #CoupleVibes',
+    likes: '19.2K',
+    comments: 312,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-3',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8KK5B9FwV-eRrpoFYMfy4JnuX376QQDcapJImR1d3DPdulJZMy57VBw&s=10',
+    caption: 'aesthetics. #GlamourShoot',
+    likes: '31.5K',
+    comments: 890,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-4',
+    imageUrl: 'https://i0.wp.com/1.bp.blogspot.com/-v6Lnpp-tQl8/XXQF2cLSSkI/AAAAAAAAD0A/DOVoypVWNu8zySbXeTl4qdfFZhgfxhV5QCLcBGAs/s1600/Bangladeshi-actress-Achol.jpg?w=1080&ssl=1',
+    caption: 'Getting ready',
+    likes: '15.6K',
+    comments: 240,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-5',
+    imageUrl: 'https://alchetron.com/cdn/achol-9b11c854-f381-4f93-9f37-3d5b00e8ba1-resize-750.jpeg',
+    caption: '#WebSeries',
+    likes: '22.3K',
+    comments: 455,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-6',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQarjBqtGhI1_RifrGrOajNe8DJxuM2Ph5dJhWxDb17F00UsgXZpjkAm2A&s=10',
+    caption: '',
+    likes: '28.9K',
+    comments: 630,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-7',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9xwwLdLHJHkPNPPaLGRpPqOuBYpzqTgr4Um_8GBVqsmZnYbO7HIHdig&s=10',
+    caption: 'Sultana Bibiana nostalgia. Revisiting flower farms and folksy tunes. Simple, authentic, and beautiful. #ArtisticCinema',
+    likes: '18.1K',
+    comments: 298,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  },
+  {
+    id: 'insta-8',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqNGXGWdEwc9ERbc6BoNmTg3Mhvx1i3WIROLwSNM2YaQTo7QPd-etkiIn_&s=10',
+    caption: 'Every studio session is a brand new start. New portraits and editorial spreads coming up real soon! Stay beautiful, stars. #Editorial',
+    likes: '26.4K',
+    comments: 512,
+    postUrl: 'https://www.instagram.com/achol_akhee'
+  }
+];
+
+]

@@ -1,0 +1,6 @@
+{
+  "name": "Achol Akhe Portfolio",
+  "description": "Breathtaking premium portfolio website of contemporary Dhallywood superstar Achol Akhe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
