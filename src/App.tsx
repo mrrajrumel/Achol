@@ -16,7 +16,6 @@ import {
   ChevronRight, 
   Menu, 
   ArrowUpRight, 
-  Sparkles, 
   Star, 
   Send,
   Linkedin,
@@ -47,7 +46,7 @@ import { InteractiveShowreel } from './components/InteractiveShowreel';
 import { filmographyProjects, timelineAwards, showreelVideos, instagramPosts } from './data';
 import { ProjectCategory, FilmProject, BookingSubmission } from './types';
 
-// Let's import the stunning generated assets directly using relative paths
+// Import portfolio showcase assets directly using relative paths
 import heroPortrait from './assets/images/achol_hero_portrait_1781897501640.jpg';
 import cinemaBanner from './assets/images/achol_cinema_banner_1781897521656.jpg';
 

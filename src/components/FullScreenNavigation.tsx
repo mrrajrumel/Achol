@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowUpRight, Github, Twitter, Instagram, Sparkles, Film, Award, Image, Mail, BookOpen } from 'lucide-react';
+import { ArrowUpRight, Github, Twitter, Instagram, Play, Film, Award, Image, Mail, BookOpen } from 'lucide-react';
 
 interface FullScreenNavigationProps {
   useAudio?: boolean;
@@ -44,7 +44,7 @@ export const FullScreenNavigation: React.FC<FullScreenNavigationProps> = ({ useA
   }, []);
 
   const menuItems = [
-    { title: 'Home', href: '#hero', icon: Sparkles, desc: 'Introductory Cinematic Showcase' },
+    { title: 'Home', href: '#hero', icon: Play, desc: 'Introductory Cinematic Showcase' },
     { title: 'Biography', href: '#biography', icon: BookOpen, desc: 'Life, Career, and Inspiration' },
     { title: 'Filmography', href: '#filmography', icon: Film, desc: 'Stellar Box-Office Screen Archive' },
     { title: 'Showreel', href: '#showreel', icon: Award, desc: 'Selected Editorial Film Scenes' },

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { MapPin, BookOpen, Star, Clock, Award, Compass, Heart, Film, Sparkles, ExternalLink, ChevronRight } from 'lucide-react';
+import { MapPin, BookOpen, Star, Clock, Award, Compass, Heart, Film, ExternalLink, ChevronRight } from 'lucide-react';
 import cinemaBanner from '../assets/images/achol_cinema_banner_1781897521656.jpg';
 
 interface InteractiveBiographyProps {
@@ -38,7 +38,7 @@ export const InteractiveBiography: React.FC<InteractiveBiographyProps> = ({ useA
   const tabs = [
     { id: 'roots', label: 'EARLY LIFE & ROOTS', icon: MapPin },
     { id: 'journey', label: 'FILM JOURNEY', icon: Compass },
-    { id: 'impact', label: 'MY FOCUS & PROJECTS', icon: Sparkles }
+    { id: 'impact', label: 'MY FOCUS & PROJECTS', icon: Film }
   ];
 
   return (
@@ -68,7 +68,7 @@ export const InteractiveBiography: React.FC<InteractiveBiographyProps> = ({ useA
             className="flex items-center gap-2.5 bg-white/5 border border-white/10 px-4 py-2 rounded-full w-fit relative overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-[#C8A261]/10 via-transparent to-transparent animate-pulse" />
-            <Sparkles className="w-3.5 h-3.5 text-[#C8A261] animate-spin" style={{ animationDuration: '10s' }} />
+            <BookOpen className="w-3.5 h-3.5 text-[#C8A261]" />
             <span className="text-[10px] tracking-[0.25em] text-white/70 uppercase font-bold font-mono">BIOGRAPHY</span>
           </motion.div>
 

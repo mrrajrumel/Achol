@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Search, Film, Calendar, Star, Tag, Award, Heart, Sparkles, ChevronRight, X, Play, Clock, User, ListFilter, Activity } from 'lucide-react';
+import { Search, Film, Calendar, Star, Tag, Award, Heart, ChevronRight, X, Play, Clock, User, ListFilter, Activity } from 'lucide-react';
 import { filmographyProjects } from '../data';
 import { FilmProject, ProjectCategory } from '../types';
 import { GlowCard } from './GlowCard';
