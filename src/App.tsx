@@ -1026,7 +1026,7 @@ export default function App() {
               <span className="font-serif text-xl sm:text-2xl tracking-[0.25em] text-white font-medium">
                 ACHOL AKHE
               </span>
-              <p className="text-[10px] tracking-[0.3em] text-champagne uppercase font-sans mt-1">
+              <p className="text-xs tracking-wider text-champagne-dark uppercase font-sans mt-1.5 font-medium">
                 Dhallywood Contemporary Film Superstar
               </p>
             </div>
