@@ -234,7 +234,7 @@ export const InteractiveBiography: React.FC<InteractiveBiographyProps> = ({ useA
                         Achol Akhe was born in <strong className="text-white font-medium">Khulna, Bangladesh</strong>. She loved acting and dancing from a young age. To follow her passion, she joined the <strong className="text-white font-semibold">Bulbul Lalitakala Academy (BAFA)</strong>, where she trained in classical and modern dance.
                       </p>
                       <p>
-                        She graduated from Stamford University, Bangladesh. Achol began her career in modeling and starred in popular TV commercials for top brands, quickly winning fans nationwide.
+                        She studied at Stamford University, Bangladesh. Achol started out in modeling and starred in TV ads for top brands, quickly winning fans across the country.
                       </p>
                     </div>
 
