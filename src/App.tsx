@@ -398,7 +398,7 @@ export default function App() {
             </h2>
             <div className="w-24 h-[1px] bg-[#C8A261] mx-auto mt-4" />
             <p className="text-sm sm:text-base text-alabaster/90 font-normal leading-relaxed mt-4 max-w-xl mx-auto">
-              Explore behind-the-scenes moments, photo shoots, and daily updates straight from her official Instagram feed: <a href="https://www.instagram.com/achol_akhee" target="_blank" rel="noopener noreferrer" className="text-[#D4B27A] font-bold hover:underline" aria-label="Achol Akhe Instagram profile (opens in a new tab)">@achol_akhee</a>
+              See behind-the-scenes photos and daily moments on her official Instagram: <a href="https://www.instagram.com/achol_akhee" target="_blank" rel="noopener noreferrer" className="text-[#D4B27A] font-bold hover:underline" aria-label="Achol Akhe Instagram profile (opens in a new tab)">@achol_akhee</a>
             </p>
           </div>
 
