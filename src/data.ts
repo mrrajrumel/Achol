@@ -51,7 +51,7 @@ export const filmographyProjects: FilmProject[] = [
     category: 'Movies',
     role: 'Achol (Lead)',
     badge: 'Romantic Blockbuster',
-    description: 'The monumental romantic blockbuster opposite Bappy Chowdhury that catapulted Achol into absolute commercial superstardom with legendary theatrical records.',
+    description: 'The romantic blockbuster with Bappy Chowdhury that made Achol a household star and set major box-office records.',
     imageUrl: JothilPremImage,
   },
   {
@@ -61,7 +61,7 @@ export const filmographyProjects: FilmProject[] = [
     category: 'Movies',
     role: 'Simi (Lead)',
     badge: 'Box Office Hit',
-    description: 'A popular and emotional romantic feature opposite Bappy Chowdhury that won outstanding commercial acclaim across Bengali theatres.',
+    description: 'A hit romantic film starring Achol and Bappy Chowdhury that won hearts and topped the box office in theatres.',
     imageUrl: PremPremPaglamiImage,
   },
   {
@@ -71,7 +71,7 @@ export const filmographyProjects: FilmProject[] = [
     category: 'Movies',
     role: 'Achol (Lead)',
     badge: 'Popular Drama',
-    description: 'Deeply emotive romantic film co-starring Bappy Chowdhury, featuring massive radio chart-toppers and highly-viewed musical sequences.',
+    description: 'An emotional romantic drama co-starring Bappy Chowdhury, celebrated for its chart-topping songs and memorable musical scenes.',
     imageUrl: KiPremDekhaImage,
   },
   {
@@ -81,7 +81,7 @@ export const filmographyProjects: FilmProject[] = [
     category: 'Movies',
     role: 'Novia (Lead)',
     badge: 'Action Blockbuster',
-    description: 'A high-octane action thriller co-starring megastar Shakib Khan. Shot extensively in international locations with elite production metrics.',
+    description: 'A thrilling action film co-starring superstar Shakib Khan, filmed across international locations with grand cinematic scale.',
     imageUrl: FaandTheTrapImage,
   },
   {
