@@ -316,7 +316,7 @@ export const timelineAwards: AwardItem[] = [
     year: '2018',
     title: 'Outstanding Digital Performance (Indubala)',
     organization: 'South Asian OTT Excellence Guild',
-    description: 'Praised for her starring role in Indubala, marking her successful debut in major web series.'
+    description: 'Awarded for her lead role in Indubala, marking her hit web series debut.'
   },
   {
     year: '2022',
