@@ -818,7 +818,7 @@ export default function App() {
               </div>
 
               <p className="text-sm sm:text-base text-alabaster/90 font-normal leading-relaxed">
-                Connect directly with Achol Akhe’s team for film roles, commercial brand deals, music videos, and special media appearances.
+                Contact Achol Akhe’s team for film roles, brand deals, music videos, and guest appearances.
               </p>
 
               <div className="space-y-4 pt-4 text-sm">
