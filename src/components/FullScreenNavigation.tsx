@@ -105,8 +105,8 @@ export const FullScreenNavigation: React.FC<FullScreenNavigationProps> = ({ useA
             <span className="font-serif text-lg sm:text-2xl tracking-[0.22em] text-white group-hover:text-[#D4B27A] transition-colors duration-400 font-bold uppercase">
               ACHOL AKHE
             </span>
-            <span className="font-sans text-xs tracking-[0.25em] text-[#D4B27A] uppercase transition-colors duration-400 mt-0.5 font-medium">
-              DHALLYWOOD PRIME SUPERSTAR
+            <span className="font-sans text-xs tracking-wider text-[#D4B27A] transition-colors duration-400 mt-0.5 font-medium">
+              Dhallywood Prime Superstar
             </span>
           </a>
 
