@@ -304,7 +304,7 @@ export const timelineAwards: AwardItem[] = [
     year: '2013',
     title: 'Best Promising Actress (Jotil Prem)',
     organization: 'Bangladesh National Cultural Society',
-    description: 'Honored for creating an iconic romantic pair and bringing big audiences back to movie theaters.'
+    description: 'Awarded for her hit romantic pairing that drew big crowds back to movie theatres.'
   },
   {
     year: '2014',
